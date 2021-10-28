@@ -3,6 +3,8 @@ $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
 $color-grey-dark: #777;
 $color-white: #fff; 
+$color-black:#000;
+
 
 *, 
 *::after,
@@ -11,6 +13,7 @@ $color-white: #fff;
     padding:0;
     box-sizing: inherit;
 }
+
 html{
     /* we want font-size:10px for easy rem calculations. 100% is 16 px default so we use 10px/16px */
     font-size:62.5%; 
@@ -124,12 +127,12 @@ body{
 
 .btn:hover{
     transform: translateY(-3px);
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba($color-black,.2);
 }
 
 .btn:active{
     transform: translateY(-1px);
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    box-shadow: 0 1rem 2rem rgba($color-black,.2);
 }
 
 .btn--white{
