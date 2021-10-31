@@ -1,0 +1,17 @@
+*, 
+*::after,
+*::before { 
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+
+html{
+    /* we want font-size:10px(1rem) for easy rem calculations. 100% is 16 px default so we use 10px/16px */
+    font-size:62.5%; 
+}
+/* body element will be inherited to all child elements */
+/* padding will not be inherited */
+body{
+    box-sizing:border-box;
+}
